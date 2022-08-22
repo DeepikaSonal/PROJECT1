@@ -1,0 +1,85 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+header
+{
+   background-image:
+   linear-gradient(rgba(52, 53, 55, 0.7),rgba(52, 53, 55, 0.7)),url(greycar.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.navmenu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.navmenu li{
+    display: inline-block;
+}
+
+.navmenu li a{
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    padding: 5px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 20px;
+}
+.homebtn a{
+    border: solid rgb(137, 100, 100);
+    background-color: grey;
+}
+.navmenu ul li a::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background:#F44336;
+    display:block;
+    margin: auto;
+    transition:0.05s;
+
+}
+.navmenu ul li a:hover::after{
+    width:100%;
+}
+
+.tagline{
+    position: absolute;
+    width:90%;
+    top :50%;
+    left:50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h1{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align:center;
+    margin: 30px;
+}
+.hero {
+    display:inline-block;
+    text-decoration:none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero:hover{
+    border: 1px #f44;
+    background: #f44;
+    transition: 1s;
+}
+
+
+@mediya(max-width:)
