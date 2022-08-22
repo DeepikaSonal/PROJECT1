@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <script>
+    function validate()
+    {
+      var username = document.getElementById('name1');
+      var email = document.getElementById('name3');
+      if(username.value =="" || email.value =="")
+      {
+        alert("Please fill the form ");
+        return false;
+      }
+      else
+      {
+        true;
+
+      }
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit=" return validate()" action = "aboutus.html">
+    <fieldset>
+      <legend>Contact Details</legend>
+<p>
+        <label>
+          Salutation
+          <br />
+          <select name="salutation">
+            <option>--None--</option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+            <option>Prof.</option>
+          </select>
+        </label>
+      </p>
+ 
+ 
+<p>
+        <label>First name: <input id="name1" name="firstName" /></label>
+      </p>
+ 
+ 
+<p>
+        <label>Last name: <input id="name2" name="lastName" /></label>
+      </p>
+ 
+ 
+       
+ 
+<p>
+        Gender :
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+      </p>  
+ 
+<p>
+        <label>Email:<input id=" name3" type="email" name="email" /></label>
+      </p>
+    </div>
+    <div class="form-example">
+      <input  type="submit" value="Subscribe!">
+    </div>      
+ 
